@@ -14,6 +14,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("contactForm");
   const messageField = document.getElementById("message");
 
+  /* 0) تفعيل التدوير التلقائي مع احترام إعداد تقليل الحركة */
+  const heroSlider = document.getElementById("heroSlider");
+  if (heroSlider && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    bootstrap.Carousel.getOrCreateInstance(heroSlider, { interval: 6000, pause: "hover", ride: "carousel" });
+  }
+
   /* 1) تغيير شكل الـ Navbar وإظهار زر العودة للأعلى عند التمرير */
   const onScroll = () => {
     const y = window.scrollY;
@@ -25,10 +31,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   /* 2) تفعيل رابط القسم الظاهر حالياً في القائمة (Scrollspy بسيط) */
   const sections = [...navLinks]
+    .filter(link => link.getAttribute("href").startsWith("#"))
     .map(link => document.querySelector(link.getAttribute("href")))
     .filter(Boolean);
 
   function highlightActiveLink() {
+    if (!sections.length) return;
     const pos = window.scrollY + window.innerHeight * 0.35;
     let current = sections[0];
     sections.forEach(sec => { if (sec.offsetTop <= pos) current = sec; });
@@ -45,13 +53,11 @@ document.addEventListener("DOMContentLoaded", () => {
     })
   );
 
-  /* 4) أزرار "اعرف المزيد" و"احجز الآن": تعبّي نص الرسالة تلقائياً */
-  document.querySelectorAll("[data-message]").forEach(btn =>
-    btn.addEventListener("click", () => {
-      messageField.value = btn.dataset.message;
-      setTimeout(() => document.getElementById("name").focus({ preventScroll: true }), 700);
-    })
-  );
+  /* 4) تعبئة الرسالة مسبقاً عند الانتقال من رابط برنامج أو حجز */
+  if (messageField) {
+    const presetMessage = new URLSearchParams(window.location.search).get("message");
+    if (presetMessage) messageField.value = presetMessage;
+  }
 
   /* 5) ظهور العناصر بشكل تدريجي عند الوصول لها */
   const observer = new IntersectionObserver(
@@ -69,7 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   /* 6) نموذج التواصل: التحقق من البيانات ثم الإرسال على واتساب */
-  form.addEventListener("submit", e => {
+  if (form) form.addEventListener("submit", e => {
     e.preventDefault();
 
     if (!form.checkValidity()) {
@@ -94,7 +100,8 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   /* 7) سنة حقوق النشر تتحدث تلقائياً */
-  document.getElementById("year").textContent = new Date().getFullYear();
+  const year = document.getElementById("year");
+  if (year) year.textContent = new Date().getFullYear();
 
   onScroll();
 });

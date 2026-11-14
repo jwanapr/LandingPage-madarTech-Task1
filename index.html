@@ -19,7 +19,7 @@
   <header>
     <nav class="navbar navbar-expand-lg fixed-top site-nav" id="siteNav" aria-label="القائمة الرئيسية">
       <div class="container">
-        <a class="navbar-brand brand" href="#home" aria-label="مدار تك - الرئيسية">
+        <a class="navbar-brand brand" href="index.html#home" aria-label="مدار تك - الرئيسية">
           <img src="assets/img/logo-mark.png" alt="" width="44" height="35">
           <span class="brand-text">
             <span class="brand-name">MADAR TECH</span>
@@ -38,9 +38,9 @@
             <li class="nav-item"><a class="nav-link" href="#about">من نحن</a></li>
             <li class="nav-item"><a class="nav-link" href="#services">خدماتنا</a></li>
             <li class="nav-item"><a class="nav-link" href="#programs">البرامج التدريبية</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contact">تواصل معنا</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">تواصل معنا</a></li>
           </ul>
-          <a href="#contact" class="btn btn-lime btn-book" data-message="مرحباً، حابب أحجز في مدار تك.">
+          <a href="contact.html?message=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%AD%D8%A7%D8%A8%D8%A8%20%D8%A3%D8%AD%D8%AC%D8%B2%20%D9%81%D9%8A%20%D9%85%D8%AF%D8%A7%D8%B1%20%D8%AA%D9%83." class="btn btn-lime btn-book">
             احجز الآن <i class="bi bi-arrow-left-short"></i>
           </a>
         </div>
@@ -59,33 +59,89 @@
         <span class="dot dot-2"></span>
       </div>
 
-      <div class="container position-relative">
-        <div class="row align-items-center g-4 g-lg-5">
-          <div class="col-lg-7 hero-content reveal">
-            <span class="eyebrow"><i class="bi bi-geo-alt-fill"></i> خانيونس</span>
-            <h1 class="hero-title">
-              مساحتك <span class="hl">للتعلّم</span>، التطور،
-              <br class="d-none d-md-block"> وصناعة الفرص
-            </h1>
-            <p class="hero-lead">
-              مدار تك مؤسسة تعليمية وتدريبية في خانيونس، نعمل على توفير بيئة تساعد الطلاب والخريجين والشباب
-              على تطوير مهاراتهم، واكتساب الخبرات العملية، والانطلاق نحو فرص جديدة.
-            </p>
-            <div class="hero-actions">
-              <a href="#services" class="btn btn-lime btn-lg">اكتشف خدماتنا</a>
-              <a href="#contact" class="btn btn-outline-light-custom btn-lg">تواصل معنا</a>
+      <div id="heroSlider" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#heroSlider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="الشريحة الأولى"></button>
+          <button type="button" data-bs-target="#heroSlider" data-bs-slide-to="1" aria-label="الشريحة الثانية"></button>
+          <button type="button" data-bs-target="#heroSlider" data-bs-slide-to="2" aria-label="الشريحة الثالثة"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container position-relative">
+              <div class="row align-items-center g-4 g-lg-5">
+                <div class="col-lg-7 hero-content">
+                  <span class="eyebrow"><i class="bi bi-geo-alt-fill"></i> خانيونس</span>
+                  <h1 class="hero-title">مساحتك <span class="hl">للتعلّم</span>، التطور،<br class="d-none d-md-block"> وصناعة الفرص</h1>
+                  <p class="hero-lead">مدار تك مؤسسة تعليمية وتدريبية في خانيونس، نعمل على توفير بيئة تساعد الطلاب والخريجين والشباب على تطوير مهاراتهم واكتساب الخبرات العملية.</p>
+                  <div class="hero-actions">
+                    <a href="#services" class="btn btn-lime btn-lg">اكتشف خدماتنا</a>
+                    <a href="contact.html" class="btn btn-outline-light-custom btn-lg">تواصل معنا</a>
+                  </div>
+                </div>
+                <div class="col-lg-5 d-none d-lg-flex justify-content-center">
+                  <div class="hero-visual">
+                    <img src="assets/img/logo-mark.png" alt="شعار مدار تك" class="hero-mark">
+                    <div class="float-chip chip-1"><i class="bi bi-code-slash"></i> Front-End</div>
+                    <div class="float-chip chip-2"><i class="bi bi-cpu"></i> AI</div>
+                    <div class="float-chip chip-3"><i class="bi bi-laptop"></i> Digital Skills</div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-
-          <div class="col-lg-5 d-none d-lg-flex justify-content-center reveal">
-            <div class="hero-visual">
-              <img src="assets/img/logo-mark.png" alt="شعار مدار تك" class="hero-mark">
-              <div class="float-chip chip-1"><i class="bi bi-code-slash"></i> Front-End</div>
-              <div class="float-chip chip-2"><i class="bi bi-cpu"></i> AI</div>
-              <div class="float-chip chip-3"><i class="bi bi-laptop"></i> Digital Skills</div>
+          <div class="carousel-item">
+            <div class="container position-relative">
+              <div class="row align-items-center g-4 g-lg-5">
+                <div class="col-lg-7 hero-content">
+                  <span class="eyebrow"><i class="bi bi-mortarboard-fill"></i> تعلّم بالتطبيق</span>
+                  <h2 class="hero-title">مهارات جديدة،<br class="d-none d-md-block"> <span class="hl">فرص أقرب</span></h2>
+                  <p class="hero-lead">انضم إلى برامج تدريبية عملية في تطوير الواجهات والذكاء الاصطناعي والمهارات الرقمية، وابدأ بخطوة واثقة نحو مستقبلك.</p>
+                  <div class="hero-actions">
+                    <a href="#programs" class="btn btn-lime btn-lg">تصفّح البرامج</a>
+                    <a href="contact.html?message=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%AD%D8%A7%D8%A8%D8%A8%20%D8%A3%D8%B9%D8%B1%D9%81%20%D8%A3%D9%83%D8%AB%D8%B1%20%D8%B9%D9%86%20%D8%A7%D9%84%D8%A8%D8%B1%D8%A7%D9%85%D8%AC%20%D8%A7%D9%84%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8%D9%8A%D8%A9." class="btn btn-outline-light-custom btn-lg">اسألنا الآن</a>
+                  </div>
+                </div>
+                <div class="col-lg-5 d-none d-lg-flex justify-content-center">
+                  <div class="hero-visual">
+                    <img src="assets/img/logo-mark.png" alt="" class="hero-mark">
+                    <div class="float-chip chip-1"><i class="bi bi-code-slash"></i> Front-End</div>
+                    <div class="float-chip chip-2"><i class="bi bi-cpu"></i> AI</div>
+                    <div class="float-chip chip-3"><i class="bi bi-laptop"></i> Digital Skills</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container position-relative">
+              <div class="row align-items-center g-4 g-lg-5">
+                <div class="col-lg-7 hero-content">
+                  <span class="eyebrow"><i class="bi bi-people-fill"></i> مجتمع مدار تك</span>
+                  <h2 class="hero-title">مساحة تجمعنا<br class="d-none d-md-block"> <span class="hl">لننجز أكثر</span></h2>
+                  <p class="hero-lead">اعمل وتعلّم وتبادل الخبرات في مساحات عمل مشتركة وقاعات تدريبية مجهزة، ضمن بيئة تدعم أفكارك وطموحك.</p>
+                  <div class="hero-actions">
+                    <a href="#services" class="btn btn-lime btn-lg">اكتشف مساحاتنا</a>
+                    <a href="contact.html?message=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%AD%D8%A7%D8%A8%D8%A8%20%D8%A3%D8%AD%D8%AC%D8%B2%20%D9%85%D9%83%D8%A7%D9%86%D9%8A%20%D9%81%D9%8A%20%D9%85%D8%AF%D8%A7%D8%B1%20%D8%AA%D9%83." class="btn btn-outline-light-custom btn-lg">احجز مكانك</a>
+                  </div>
+                </div>
+                <div class="col-lg-5 d-none d-lg-flex justify-content-center">
+                  <div class="hero-visual">
+                    <img src="assets/img/logo-mark.png" alt="" class="hero-mark">
+                    <div class="float-chip chip-1"><i class="bi bi-people"></i> Community</div>
+                    <div class="float-chip chip-2"><i class="bi bi-easel"></i> Training</div>
+                    <div class="float-chip chip-3"><i class="bi bi-lightbulb"></i> Ideas</div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroSlider" data-bs-slide="prev" aria-label="الشريحة السابقة">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroSlider" data-bs-slide="next" aria-label="الشريحة التالية">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
       </div>
 
       <a href="#about" class="scroll-hint" aria-label="انزل إلى قسم من نحن"><i class="bi bi-chevron-down"></i></a>
@@ -170,7 +226,7 @@
               <div class="program-icon"><i class="bi bi-code-slash"></i></div>
               <h3 class="program-title" dir="ltr">Front-End Development</h3>
               <p>تعلم أساسيات تطوير واجهات المواقع الإلكترونية.</p>
-              <a href="#contact" class="program-link" data-message="مرحباً، حابب أعرف أكثر عن برنامج Front-End Development.">
+              <a href="contact.html?message=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%AD%D8%A7%D8%A8%D8%A8%20%D8%A3%D8%B9%D8%B1%D9%81%20%D8%A3%D9%83%D8%AB%D8%B1%20%D8%B9%D9%86%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20Front-End%20Development." class="program-link">
                 اعرف المزيد <i class="bi bi-arrow-left"></i>
               </a>
             </article>
@@ -181,7 +237,7 @@
               <div class="program-icon"><i class="bi bi-cpu"></i></div>
               <h3 class="program-title" dir="ltr">Artificial Intelligence</h3>
               <p>التعرف على أدوات الذكاء الاصطناعي وتطبيقاتها العملية.</p>
-              <a href="#contact" class="program-link" data-message="مرحباً، حابب أعرف أكثر عن برنامج Artificial Intelligence.">
+              <a href="contact.html?message=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%AD%D8%A7%D8%A8%D8%A8%20%D8%A3%D8%B9%D8%B1%D9%81%20%D8%A3%D9%83%D8%AB%D8%B1%20%D8%B9%D9%86%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20Artificial%20Intelligence." class="program-link">
                 اعرف المزيد <i class="bi bi-arrow-left"></i>
               </a>
             </article>
@@ -192,7 +248,7 @@
               <div class="program-icon"><i class="bi bi-laptop"></i></div>
               <h3 class="program-title" dir="ltr">Digital Skills</h3>
               <p>تطوير المهارات الرقمية واستخدام الأدوات التقنية.</p>
-              <a href="#contact" class="program-link" data-message="مرحباً، حابب أعرف أكثر عن برنامج Digital Skills.">
+              <a href="contact.html?message=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%AD%D8%A7%D8%A8%D8%A8%20%D8%A3%D8%B9%D8%B1%D9%81%20%D8%A3%D9%83%D8%AB%D8%B1%20%D8%B9%D9%86%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20Digital%20Skills." class="program-link">
                 اعرف المزيد <i class="bi bi-arrow-left"></i>
               </a>
             </article>
@@ -208,7 +264,7 @@
           <div class="col-lg-4 reveal">
             <span class="section-tag">لماذا مدار تك؟</span>
             <h2 class="section-title">لأن بيئة التعلم تصنع فرقاً.</h2>
-            <a href="#contact" class="btn btn-navy mt-3" data-message="مرحباً، حابب أحجز في مدار تك.">احجز مكانك</a>
+            <a href="contact.html?message=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%AD%D8%A7%D8%A8%D8%A8%20%D8%A3%D8%AD%D8%AC%D8%B2%20%D9%81%D9%8A%20%D9%85%D8%AF%D8%A7%D8%B1%20%D8%AA%D9%83." class="btn btn-navy mt-3">احجز مكانك</a>
           </div>
           <div class="col-lg-8">
             <ul class="why-grid">
@@ -224,60 +280,13 @@
       </div>
     </section>
 
-    <!-- ========== 07 Contact ========== -->
-    <section class="section contact" id="contact">
-      <div class="container">
-        <div class="contact-wrap">
-          <div class="contact-info reveal">
-            <span class="section-tag section-tag--light">تواصل معنا</span>
-            <h2 class="section-title text-white">خلينا نبدأ رحلتك مع بعض.</h2>
-            <p class="contact-lead">عندك استفسار عن برامجنا أو خدماتنا؟ تواصل معنا، وفريق مدار تك جاهز يساعدك.</p>
-
-            <ul class="contact-list">
-              <li><i class="bi bi-geo-alt"></i><span>خانيونس – بجانب المحكمة الشرعية</span></li>
-              <li><i class="bi bi-envelope"></i><a href="mailto:madartech1@gmail.com">madartech1@gmail.com</a></li>
-              <li><i class="bi bi-instagram"></i><a href="https://www.instagram.com/madar_tech0" target="_blank" rel="noopener" dir="ltr">@madar_tech0</a></li>
-            </ul>
-          </div>
-
-          <form class="contact-form reveal" id="contactForm" novalidate>
-            <div class="form-grid">
-              <div class="field">
-                <label for="name" class="form-label">الاسم</label>
-                <input type="text" class="form-control" id="name" name="name" placeholder="اكتب اسمك" required minlength="2">
-                <div class="invalid-feedback">الرجاء كتابة الاسم.</div>
-              </div>
-              <div class="field">
-                <label for="phone" class="form-label">رقم الهاتف</label>
-                <input type="tel" class="form-control" id="phone" name="phone" placeholder="059xxxxxxx" dir="ltr" required pattern="^\+?[0-9\s\-]{9,15}$">
-                <div class="invalid-feedback">الرجاء كتابة رقم هاتف صحيح.</div>
-              </div>
-              <div class="field field--full">
-                <label for="email" class="form-label">البريد الإلكتروني</label>
-                <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" dir="ltr" required>
-                <div class="invalid-feedback">الرجاء كتابة بريد إلكتروني صحيح.</div>
-              </div>
-              <div class="field field--full">
-                <label for="message" class="form-label">الرسالة</label>
-                <textarea class="form-control" id="message" name="message" rows="4" placeholder="اكتب رسالتك هنا…" required minlength="5"></textarea>
-                <div class="invalid-feedback">الرجاء كتابة رسالتك.</div>
-              </div>
-            </div>
-            <button type="submit" class="btn btn-lime btn-lg w-100 mt-3">
-              <i class="bi bi-whatsapp"></i> إرسال عبر واتساب
-            </button>
-            <p class="form-note">رح تنفتح محادثة واتساب فيها بياناتك جاهزة، بس اضغط إرسال.</p>
-          </form>
-        </div>
-      </div>
-    </section>
   </main>
 
   <!-- ========== 08 Footer ========== -->
   <footer class="site-footer">
     <div class="container">
       <div class="footer-grid">
-        <div class="footer-about">
+        <div class="footer-about reveal">
           <a href="#home" class="brand mb-3">
             <img src="assets/img/logo-mark.png" alt="" width="44" height="35">
             <span class="brand-text">
@@ -288,18 +297,18 @@
           <p>مؤسسة تعليمية وتدريبية في خانيونس، نربط المعرفة بالتطبيق العملي ونساعد الشباب على صناعة فرصهم.</p>
         </div>
 
-        <div>
+        <div class="reveal">
           <h4 class="footer-title">روابط سريعة</h4>
           <ul class="footer-links">
             <li><a href="#home">الرئيسية</a></li>
             <li><a href="#about">من نحن</a></li>
             <li><a href="#services">خدماتنا</a></li>
             <li><a href="#programs">البرامج التدريبية</a></li>
-            <li><a href="#contact">تواصل معنا</a></li>
+            <li><a href="contact.html">تواصل معنا</a></li>
           </ul>
         </div>
 
-        <div>
+        <div class="reveal">
           <h4 class="footer-title">تواصل معنا</h4>
           <ul class="footer-contact">
             <li><i class="bi bi-instagram"></i><a href="https://www.instagram.com/madar_tech0" target="_blank" rel="noopener" dir="ltr">madar_tech0</a></li>
@@ -309,7 +318,7 @@
         </div>
       </div>
 
-      <div class="footer-bottom">
+      <div class="footer-bottom reveal">
         <p>© <span id="year">2026</span> Madar Tech. جميع الحقوق محفوظة.</p>
       </div>
     </div>

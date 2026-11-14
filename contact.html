@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تواصل معنا | مدار تك</title>
+  <meta name="description" content="تواصل مع مدار تك للاستفسار عن البرامج التدريبية، خدماتنا، أو حجز مكانك في خانيونس.">
+  <link rel="icon" type="image/png" href="assets/img/logo-mark.png">
+  <link rel="stylesheet" href="vendor/bootstrap/bootstrap.rtl.min.css">
+  <link rel="stylesheet" href="vendor/bootstrap-icons/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="contact-page">
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top site-nav scrolled" id="siteNav" aria-label="القائمة الرئيسية">
+      <div class="container">
+        <a class="navbar-brand brand" href="index.html#home" aria-label="مدار تك - الرئيسية">
+          <img src="assets/img/logo-mark.png" alt="" width="44" height="35">
+          <span class="brand-text">
+            <span class="brand-name">MADAR TECH</span>
+            <span class="brand-sub">مدار تك</span>
+          </span>
+        </a>
+        <button class="navbar-toggler menu-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu"
+                aria-controls="mainMenu" aria-expanded="false" aria-label="فتح القائمة">
+          <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainMenu">
+          <ul class="navbar-nav mx-auto nav-links">
+            <li class="nav-item"><a class="nav-link" href="index.html#home">الرئيسية</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#about">من نحن</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#services">خدماتنا</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#programs">البرامج التدريبية</a></li>
+            <li class="nav-item"><a class="nav-link active" href="contact.html" aria-current="page">تواصل معنا</a></li>
+          </ul>
+          <a href="#contactForm" class="btn btn-lime btn-book">أرسل رسالة <i class="bi bi-arrow-left-short"></i></a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-page-hero" id="contactPageTop">
+      <div class="container reveal">
+        <span class="eyebrow"><i class="bi bi-chat-dots-fill"></i> نحن هنا لمساعدتك</span>
+        <h1 class="hero-title">تواصل <span class="hl">معنا</span></h1>
+        <p class="hero-lead">يسعدنا الإجابة عن أسئلتك ومساعدتك في اختيار البرنامج أو الخدمة المناسبة.</p>
+      </div>
+    </section>
+
+    <section class="section contact contact-page-section" id="contact">
+      <div class="container">
+        <div class="contact-wrap">
+          <div class="contact-info reveal">
+            <span class="section-tag section-tag--light">مدار تك في خانيونس</span>
+            <h2 class="section-title text-white">خلينا نبدأ رحلتك مع بعض.</h2>
+            <p class="contact-lead">أرسل لنا رسالتك، وفريق مدار تك جاهز يساعدك.</p>
+            <ul class="contact-list">
+              <li><i class="bi bi-geo-alt"></i><span>خانيونس – بجانب المحكمة الشرعية</span></li>
+              <li><i class="bi bi-envelope"></i><a href="mailto:madartech1@gmail.com">madartech1@gmail.com</a></li>
+              <li><i class="bi bi-instagram"></i><a href="https://www.instagram.com/madar_tech0" target="_blank" rel="noopener" dir="ltr">@madar_tech0</a></li>
+            </ul>
+          </div>
+
+          <form class="contact-form reveal" id="contactForm" novalidate>
+            <div class="form-grid">
+              <div class="field">
+                <label for="name" class="form-label">الاسم</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="اكتب اسمك" required minlength="2">
+                <div class="invalid-feedback">الرجاء كتابة الاسم.</div>
+              </div>
+              <div class="field">
+                <label for="phone" class="form-label">رقم الهاتف</label>
+                <input type="tel" class="form-control" id="phone" name="phone" placeholder="059xxxxxxx" dir="ltr" required pattern="^\+?[0-9\s\-]{9,15}$">
+                <div class="invalid-feedback">الرجاء كتابة رقم هاتف صحيح.</div>
+              </div>
+              <div class="field field--full">
+                <label for="email" class="form-label">البريد الإلكتروني</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" dir="ltr" required>
+                <div class="invalid-feedback">الرجاء كتابة بريد إلكتروني صحيح.</div>
+              </div>
+              <div class="field field--full">
+                <label for="message" class="form-label">الرسالة</label>
+                <textarea class="form-control" id="message" name="message" rows="4" placeholder="اكتب رسالتك هنا…" required minlength="5"></textarea>
+                <div class="invalid-feedback">الرجاء كتابة رسالتك.</div>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-lime btn-lg w-100 mt-3">
+              <i class="bi bi-whatsapp"></i> إرسال عبر واتساب
+            </button>
+            <p class="form-note">رح تنفتح محادثة واتساب فيها بياناتك جاهزة، بس اضغط إرسال.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about reveal">
+          <a href="index.html#home" class="brand mb-3">
+            <img src="assets/img/logo-mark.png" alt="" width="44" height="35">
+            <span class="brand-text"><span class="brand-name">MADAR TECH</span><span class="brand-sub">مدار تك</span></span>
+          </a>
+          <p>مؤسسة تعليمية وتدريبية في خانيونس، نربط المعرفة بالتطبيق العملي ونساعد الشباب على صناعة فرصهم.</p>
+        </div>
+        <div class="reveal">
+          <h2 class="footer-title">روابط سريعة</h2>
+          <ul class="footer-links">
+            <li><a href="index.html#home">الرئيسية</a></li>
+            <li><a href="index.html#about">من نحن</a></li>
+            <li><a href="index.html#services">خدماتنا</a></li>
+            <li><a href="index.html#programs">البرامج التدريبية</a></li>
+            <li><a href="contact.html">تواصل معنا</a></li>
+          </ul>
+        </div>
+        <div class="reveal">
+          <h2 class="footer-title">تواصل معنا</h2>
+          <ul class="footer-contact">
+            <li><i class="bi bi-instagram"></i><a href="https://www.instagram.com/madar_tech0" target="_blank" rel="noopener" dir="ltr">madar_tech0</a></li>
+            <li><i class="bi bi-envelope"></i><a href="mailto:madartech1@gmail.com">madartech1@gmail.com</a></li>
+            <li><i class="bi bi-geo-alt"></i><span>خانيونس – بجانب المحكمة الشرعية</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="year">2026</span> Madar Tech. جميع الحقوق محفوظة.</p>
+      </div>
+    </div>
+  </footer>
+  <a href="#contactPageTop" class="to-top" id="toTop" aria-label="العودة للأعلى"><i class="bi bi-arrow-up"></i></a>
+  <script src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
